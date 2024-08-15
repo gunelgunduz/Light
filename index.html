@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Light</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        margin-top: 20vw;
+    }
+</style>
+<body>
+     <input type="button" value="Open Light" onclick="openLight();">
+     <img src="media/off.gif" alt="Light" id="Picture">
+     <input type="button" value="Close Light" onclick="closeLight();">
+
+    <script>
+       function openLight(){
+        document.getElementById('Picture').src="media/on.gif"
+       }
+
+       function closeLight(){
+        document.getElementById('Picture').src="media/off.gif"
+       }
+    </script>
+</body>
+</html>
